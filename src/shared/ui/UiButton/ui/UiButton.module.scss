@@ -11,7 +11,7 @@
   }
 
   &:disabled {
-    background: #bdc3c7;
+    background: var(--disabled-btn-color);
     cursor: not-allowed;
     opacity: 0.7;
     transform: none;
@@ -26,12 +26,12 @@
 }
 
 .cross {
-  background: #e74c3c;
+  background: var(--cross-color);
   color: white;
 }
 
 .zero {
-  background: #3498db;
+  background: var(--zero-color);
   color: white;
 }
 
@@ -39,8 +39,8 @@
   padding: 12px 24px;
   font-size: 1.1rem;
   font-weight: 600;
-  color: #fff;
-  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: var(--start-color-text);
+  background: var(--background-start);
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -49,12 +49,12 @@
     box-shadow 0.2s ease;
 
   &:hover:not(:disabled) {
-    box-shadow: 0 6px 15px rgba(0, 242, 254, 0.4);
+    box-shadow: var(--shadow-hover);
     transform: translateY(-2px);
   }
 
   &:active:not(:disabled) {
     transform: scale(0.97);
-    box-shadow: 0 3px 8px rgba(0, 242, 254, 0.3);
+    box-shadow: var(--shadow-active);
   }
 }

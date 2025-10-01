@@ -1,18 +1,20 @@
 {
   "name": "package.json",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "type": "module",
   "engines": {
     "node": "^20.19.0 || >=22.12.0"
   },
   "scripts": {
-    "dev": "vite",
-    "build": "run-p type-check \"build-only {@}\" --",
+    "start": "vite",
+    "build": "vite build",
     "preview": "vite preview",
-    "build-only": "vite build",
-    "type-check": "vue-tsc --build",
+    "lint:ts": "vue-tsc --build",
     "lint:fix": "eslint . --fix",
+    "lint:scss": " npx stylelint \"**/*.scss\"",
+    "lint:scss:fix": " npx stylelint \"**/*.scss\" --fix",
+    "prettier:check": "prettier --check src/",
     "prettier:fix": "prettier --write src/"
   },
   "dependencies": {
@@ -27,6 +29,9 @@
     "@vue/eslint-config-prettier": "^10.2.0",
     "@vue/eslint-config-typescript": "^14.6.0",
     "@vue/tsconfig": "^0.7.0",
+    "stylelint": "^16.23.1",
+    "stylelint-config-standard-scss": "^15.0.1",
+    "stylelint-scss": "^6.12.1",
     "eslint": "^9.31.0",
     "eslint-plugin-vue": "~10.3.0",
     "jiti": "^2.4.2",

@@ -6,7 +6,7 @@
 .cell {
   width: 100px;
   height: 100px;
-  border: 2px solid #333;
+  border: 3px solid var(--cell-color);
   text-align: center;
   vertical-align: middle;
   font-size: 3rem;
@@ -18,17 +18,20 @@
 
 .cell:hover {
   background-color: #f0f0f0;
-  transform: scale(1.05);
+  transform: scale(1.1);
+}
+
+.x,
+.o {
+  font-weight: 600;
 }
 
 .x {
-  color: #e74c3c;
-  font-weight: bold;
+  color: var(--cross-color);
 }
 
 .o {
-  color: #3498db;
-  font-weight: bold;
+  color: var(--zero-color);
 }
 
 @media (hover: none) and (pointer: coarse) {

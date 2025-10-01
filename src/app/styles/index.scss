@@ -18,11 +18,11 @@
 .title {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: #2c3e50;
+  color: var(--text-color);
 }
 
 .result {
   font-size: 1.5rem;
   margin: 1rem 0;
-  color: #8e44ad;
+  color: var(--result-color);
 }
