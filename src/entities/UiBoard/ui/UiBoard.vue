@@ -5,7 +5,7 @@ import { CROSS, ZERO } from '@/shared/config/board.config.ts'
 
 defineProps<{
   class?: string
-  mark: (row: number, col: number) => void
+  mark?: (row: number, col: number) => void
   board: string[]
 }>()
 </script>
@@ -17,7 +17,7 @@ defineProps<{
         <td
           v-for="col in 3"
           :key="col"
-          @click="mark(row - 1, col - 1)"
+          @click="mark?.(row - 1, col - 1)"
           :class="
             classNames(
               cls.cell,
