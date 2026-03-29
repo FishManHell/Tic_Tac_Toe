@@ -1,39 +1,51 @@
-# .
+# Tic Tac Toe
 
-This template should help get you started developing with Vue 3 in Vite.
+Tic Tac Toe is a simple web-based game built with Vue.js.  
+It allows two players to play turn by turn, choose who starts first, and restart the match at any time through a clean and minimal interface.
 
-## Recommended IDE Setup
+---
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Overview
 
-## Type Support for `.vue` Imports in TS
+The project was created as a small interactive game focused on basic game logic, user interaction, and clean UI structure.  
+It provides a classic Tic Tac Toe experience with player turn selection and game reset functionality.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+---
 
-## Customize configuration
+## Features
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+- Classic Tic Tac Toe gameplay
+- Two-player turn-based game logic
+- Choose who starts first
+- Detect winning combinations
+- Restart the game at any time
+- Simple and clean user interface
+- Responsive layout
 
-## Project Setup
+---
 
-```sh
-npm install
-```
+## Main Functionality
 
-### Compile and Hot-Reload for Development
+- **Start Player Selection** — choose whether X or O goes first
+- **Game Board** — interactive 3x3 grid
+- **Turn-Based Logic** — players alternate turns
+- **Game Reset** — start a new match with one click
 
-```sh
-npm run dev
-```
+---
 
-### Type-Check, Compile and Minify for Production
+## Tech Stack
 
-```sh
-npm run build
-```
+- Vue.js
+- TypeScript
+- SCSS / SASS
+- Storybook
 
-### Lint with [ESLint](https://eslint.org/)
+---
 
-```sh
-npm run lint
-```
+## Project Highlights
+
+- Built with Vue.js and component-based architecture
+- Clear implementation of core game logic
+- Simple and intuitive UI
+- Reusable structure for small interactive applications
+- Good example of state-driven rendering in Vue
